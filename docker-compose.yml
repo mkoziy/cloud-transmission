@@ -1,0 +1,6 @@
+transmission:
+    image: nemoalex/docker-transmission
+    volumes:
+        - "/downloads:/root/Downloads"
+        - "./config:/etc/transmission-daemon"
+    net: host
