@@ -3,6 +3,7 @@
 ufw default deny incoming
 ufw default deny outgoing
 ufw allow 9091
+ufw allow 443
 ufw allow ssh
 ufw allow out 51413/tcp
 ufw allow out 51413/udp

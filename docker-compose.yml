@@ -8,5 +8,6 @@ nginx:
     image: nginx
     volumes:
         - "/downloads:/var/www"
-        - "./nginx/config:/etc/nginx"
-    net: host
+        - "./nginx/config:/etc/nginx/sites-available"
+    expose:
+      - "443:443"
