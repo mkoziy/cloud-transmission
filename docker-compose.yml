@@ -4,10 +4,3 @@ transmission:
         - "/downloads:/root/Downloads"
         - "./transmission/config:/etc/transmission-daemon"
     net: host
-nginx:
-    image: nginx
-    volumes:
-        - "/downloads:/var/www"
-        - "./nginx/config:/etc/nginx/sites-available"
-    expose:
-      - "443:443"
