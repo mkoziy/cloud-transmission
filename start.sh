@@ -1,10 +1,9 @@
 #!/bin/bash
 
-ufw default deny incoming
-ufw default deny outgoing
-ufw allow 9091
 ufw allow ssh
-ufw allow in 51413
+ufw allow 9091
+ufw deny out 51413/tcp
+ufw deny out 51413/udp
 
 docker-compose up -d
 
