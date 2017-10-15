@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt-get install php-cli -y
+DEBIAN_FRONTEND=noninteractive apt-get install php-cli -y
 
 ufw allow ssh
 ufw allow 9091
