@@ -1,7 +1,5 @@
 #!/bin/bash
 
-DEBIAN_FRONTEND=noninteractive apt-get install php7.0-cli -y
-
 ufw allow ssh
 ufw allow 9091
 ufw deny out 51413/tcp
