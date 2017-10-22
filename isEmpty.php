@@ -1,3 +1,4 @@
 <?php
 
-echo (int) (count(scandir('/downloads')) <= 2);
+$path = !empty($argv[1]) ? $argv[1] : '';
+echo (int) (count(scandir($path)) <= 2);
