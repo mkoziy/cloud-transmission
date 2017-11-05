@@ -1,5 +1,7 @@
 #!/bin/bash
 
+docker-compose down
+
 ufw allow ssh
 ufw allow 9091
 ufw deny out 51413/tcp
